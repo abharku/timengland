@@ -1,0 +1,5 @@
+conditionalEvents:
+  - condition: user.params.accountLinkingStatus == "LINKED"
+  handler:
+    webhookHandler: mainHandler
+  transitionToScene: actions.scene.END_CONVERSATION
